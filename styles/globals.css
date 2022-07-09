@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+
+    html, body {
+        scroll-behavior: smooth;
+    }
+
+    /* Resume */
+    .r-border { @apply border rounded-2xl p-4 mb-2 lg:mb-7; }
+
+    .r-heading { @apply text-2xl text-cyan-700 font-bold tracking-widest; }
+    .r-job { @apply font-bold; }
+    .r-company { @apply font-semibold; }
+    .r-text { @apply text-sm text-gray-500; }
+    .r-ul { @apply list-disc p-6; }
+
+    .r-present { @apply  rounded bg-theme text-white p-1 font-semibold opacity-80; }
+
+    .timeline { @apply border-l-4 border-gray-200 ml-4 mt-3 py-2 space-y-4 -mb-20; }
+    .dot { @apply absolute top-5 -left-3.5 bg-theme h-6 w-6 rounded-full border-2 border-white; }
+    .timeline-date { @apply text-xs font-bold tracking-widest text-gray-500; }
+    .timeline-title { @apply text-base font-semibold pt-4 text-text-primary; }
+    .timeline-subtitle { @apply text-sm font-semibold text-text-secondary; }
+
+    .r-border { 
+        @apply border rounded-none m-2 border-dashed
+    }
+
+    /* dgsgs */
+    .secondary-title {
+        @apply text-3xl font-bold;
+    }
+    
+    .secondary-title::before {
+        content: "";
+        @apply block w-12 h-2 bg-theme rounded-full mb-1;
+    }
+
+    .third-title {
+        @apply text-3xl font-bold;
+    }
+    
+    .third-title::before {
+        content: "";
+        @apply block w-8 h-1 bg-theme rounded-full mb-1;
+    }
+
+
+    /* Icons 0-5 */
+    .ps {
+        width: 65px;
+        height: 65px;
+        background: url("../assets/icons 50x50-01.svg") no-repeat;
+        display: inline-block;
+    }
+    .ps:hover {
+        background: url("../assets/icons 50x50-02.svg") no-repeat;
+    }
+
+    .ai {
+        width: 65px;
+        height: 65px;
+        background: url("../assets/icons 50x50-03.svg") no-repeat;
+        display: inline-block;
+    }
+    .ai:hover {
+        background: url("../assets/icons 50x50-04.svg") no-repeat;
+    }
+
+    .id {
+        width: 65px;
+        height: 65px;
+        background: url("../assets/icons 50x50-05.svg") no-repeat;
+        display: inline-block;
+    }
+    .id:hover {
+        background: url("../assets/icons 50x50-06.svg") no-repeat;
+    }
+
+    .lr {
+        width: 65px;
+        height: 65px;
+        background: url("../assets/icons 50x50-07.svg") no-repeat;
+        display: inline-block;
+    }
+    .lr:hover {
+        background: url("../assets/icons 50x50-08.svg") no-repeat;
+    }
+    .pr {
+        width: 65px;
+        height: 65px;
+        background: url("../assets/icons 50x50-09.svg") no-repeat;
+        display: inline-block;
+    }
+    .pr:hover {
+        background: url("../assets/icons 50x50-10.svg") no-repeat;
+    }
+    /* Next 5-10 */
+    .dw {
+        width: 65px;
+        height: 65px;
+        background: url("../assets/icons 50x50-11.svg") no-repeat;
+        display: inline-block;
+    }
+    .dw:hover {
+        background: url("../assets/icons 50x50-12.svg") no-repeat;
+    }
+
+    .css {
+        width: 65px;
+        height: 65px;
+        background: url("../assets/icons 50x50-13.svg") no-repeat;
+        display: inline-block;
+    }
+    .css:hover {
+        background: url("../assets/icons 50x50-14.svg") no-repeat;
+    }
+
+    .acr {
+        width: 65px;
+        height: 65px;
+        background: url("../assets/icons 50x50-15.svg") no-repeat;
+        display: inline-block;
+    }
+    .acr:hover {
+        background: url("../assets/icons 50x50-16.svg") no-repeat;
+    }
+
+    .html {
+        width: 65px;
+        height: 65px;
+        background: url("../assets/icons 50x50-17.svg") no-repeat;
+        display: inline-block;
+    }
+    .html:hover {
+        background: url("../assets/icons 50x50-18.svg") no-repeat;
+    }
+    .off {
+        width: 65px;
+        height: 65px;
+        background: url("../assets/icons 50x50-19.svg") no-repeat;
+        display: inline-block;
+    }
+    .off:hover {
+        background: url("../assets/icons 50x50-20.svg") no-repeat;
+    }
+
+    /* Next 10-15 */
+    .bl {
+        width: 65px;
+        height: 65px;
+        background: url("../assets/icons 50x50-21.svg") no-repeat;
+        display: inline-block;
+    }
+    .bl:hover {
+        background: url("../assets/icons 50x50-22.svg") no-repeat;
+    }
+
+    .sw {
+        width: 65px;
+        height: 65px;
+        background: url("../assets/icons 50x50-23.svg") no-repeat;
+        display: inline-block;
+    }
+    .sw:hover {
+        background: url("../assets/icons 50x50-24.svg") no-repeat;
+    }
+
+    .pc {
+        width: 65px;
+        height: 65px;
+        background: url("../assets/icons 50x50-25.svg") no-repeat;
+        display: inline-block;
+    }
+    .pc:hover {
+        background: url("../assets/icons 50x50-26.svg") no-repeat;
+    }
+
+    .mac {
+        width: 65px;
+        height: 65px;
+        background: url("../assets/icons 50x50-27.svg") no-repeat;
+        display: inline-block;
+    }
+    .mac:hover {
+        background: url("../assets/icons 50x50-28.svg") no-repeat;
+    }
+    .nice {
+        width: 65px;
+        height: 65px;
+        background: url("../assets/icons 50x50-29.svg") no-repeat;
+        display: inline-block;
+    }
+    .nice:hover {
+        background: url("../assets/icons 50x50-30.svg") no-repeat;
+    }
+}
