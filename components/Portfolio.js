@@ -104,7 +104,7 @@ function Portfolio() {
                 ))}
             </div>
             <Transition appear show={isOpen} as={Fragment}>
-                <Dialog as="div" classNameName="relative z-50" onClose={closeModal}>
+                <Dialog as="div" className="relative z-50" onClose={closeModal}>
                 <Transition.Child
                     as={Fragment}
                     enter="ease-out duration-300"
@@ -114,11 +114,11 @@ function Portfolio() {
                     leaveFrom="opacity-100"
                     leaveTo="opacity-0"
                 >
-                    <div classNameName="fixed inset-0 bg-black bg-opacity-60" />
+                    <div className="fixed inset-0 bg-black bg-opacity-60" />
                 </Transition.Child>
 
-                <div classNameName="fixed inset-0 overflow-y-auto">
-                    <div classNameName="flex min-h-full items-center justify-center p-4 text-center">
+                <div className="fixed inset-0 overflow-y-auto">
+                    <div className="flex min-h-full items-center justify-center p-4 text-center">
                         <Transition.Child
                             as={Fragment}
                             enter="ease-out duration-300"
@@ -128,7 +128,7 @@ function Portfolio() {
                             leaveFrom="opacity-100 scale-100"
                             leaveTo="opacity-0 scale-95"
                         >
-                            <Dialog.Panel classNameName="w-screen h-full transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                            <Dialog.Panel className="w-screen h-full transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                             {/* Title */}
                             <div className="items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
                                 <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl md:text-left secondary-title text-text-primary">Portfolio</h1>
@@ -144,7 +144,7 @@ function Portfolio() {
                                         image={image} 
                                         title={title}/></button>
                                 ))}
-                                                                {projects.map(({ image, title, index }) => (
+                                {projects.map(({ image, title, index }) => (
                                     <button type="button" onClick={openModal}><ImageComponent key={index}
                                         image={image} 
                                         title={title}/></button>
@@ -152,7 +152,7 @@ function Portfolio() {
                             </div>
                             {/* Close */}
                             <div className="absolute h-8 w-8 top-0 right-0 mr-32 mt-12 cursor-pointer hover:scale-110 fill-theme" onClick={closeModal}>  
-                                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg>
+                                <svg clip-rule="evenodd" fillRule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg>
                             </div>
                             </Dialog.Panel>
                         </Transition.Child>
