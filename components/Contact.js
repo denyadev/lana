@@ -40,7 +40,7 @@ function Contact() {
                             <svg className="fill-theme" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z"/></svg>                            
                             <p className="ml-4">lana@mydomain.com</p>
                         </a>
-						<a href="https://www.linkedin.com/in/lanakosogova/" target="_blank" className="flex mt-4 text-theme underline hover:font-bold">
+						<a href="https://www.linkedin.com/in/lanakosogova/" target="_blank" rel="noreferrer" className="flex mt-4 text-theme underline hover:font-bold">
                             <svg className="fill-theme" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg>
                             <p className="ml-4">linkedin.com/in/lanakosogova</p>
                         </a>

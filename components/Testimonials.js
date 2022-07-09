@@ -26,7 +26,7 @@ function Testimonials() {
                                 six weeks and managed to pick up the loose threads with minimal
                                 supervision, keeping our content fresh and our code clean. Her
                                 design and build of the Rat Race Event Site is an improvement
-                                over last year's site. I highly recommend her!</span>
+                                over last year&apos;s site. I highly recommend her!</span>
                         </div>
                     </div>
 					<div className="overflow-hidden md:relative max-w-full mx-auto bg-white shadow-lg ring-1 ring-black/5 rounded-xl md:flex items-center gap-6 dark:bg-slate-100 dark:highlight-white/5">

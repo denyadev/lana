@@ -29,7 +29,7 @@ function About() {
                     <div className="flex flex-col justify-center md:justify-start max-w-xl mt-0 md:my-24 md:ml-24 pt-12 md:py-0">
                         <div className="border-l-4 border-theme pl-5 md:pl-10">
                             <h2 className="font-semibold text-sm md:text-base lg:text-lg md:text-left text-text-primary">Developed a system to manage and organize files.</h2>
-                            <p className="text-xs md:text-sm lg:text-base md:text-left text-text-secondary">Implemented a database software with the support of IT to easily search for companies' artwork. Decreased the time required to search by <b className="text-theme">70%</b></p>
+                            <p className="text-xs md:text-sm lg:text-base md:text-left text-text-secondary">Implemented a database software with the support of IT to easily search for companies artwork. Decreased the time required to search by <b className="text-theme">70%</b></p>
                         </div>
                         <br/>
                         <div className="border-l-4 border-theme pl-5 md:pl-10">
