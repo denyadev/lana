@@ -9,8 +9,6 @@ import Testimonials from '../components/Testimonials.js'
 import Contact from '../components/Contact.js'
 import Footer from '../components/Footer.js'
 
-import Modal from '../components/Modal.js'
-
 export default function Home() {
   return (
     <div>

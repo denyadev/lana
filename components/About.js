@@ -8,8 +8,7 @@ function About() {
                 <h1 className="hidden md:block font-bold text-5xl md:text-7xl lg:text-9xl md:text-left absolute left-24 text-text-primary/10">About me</h1>
                 <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl md:text-left secondary-title text-text-primary ">About me</h1>
             </div>
-            <div className="flex justify-between items-center md:my-24 mx-6 md:mx-12 my-16">
-                 
+            <div className="flex justify-between items-center md:my-24 mx-6 md:mx-24 my-16">
                 <div className="block md:flex md:flex-row">
                     <div className="flex flex-col justify-center md:justify-start max-w-3xl mt-0 md:my-24">
                         
@@ -31,7 +30,7 @@ function About() {
                             <h2 className="font-semibold text-sm md:text-base lg:text-lg md:text-left text-text-primary">Developed a system to manage and organize files.</h2>
                             <p className="text-xs md:text-sm lg:text-base md:text-left text-text-secondary">Implemented a database software with the support of IT to easily search for companies artwork. Decreased the time required to search by <b className="text-theme">70%</b></p>
                         </div>
-                        <br/>
+                        <br/><br/>
                         <div className="border-l-4 border-theme pl-5 md:pl-10">
                             <h2 className="font-semibold text-sm md:text-base lg:text-lg md:text-left text-text-primary">Product Photography for Home Depot.</h2>
                             <p className="text-xs md:text-sm lg:text-base md:text-left text-text-secondary">Shot and published thousands of professional photographs of products for Home Depot website which led to an increase in traffic by <b className="text-theme">75%</b> and online sales by <b className="text-theme">25%</b></p>

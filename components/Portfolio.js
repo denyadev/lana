@@ -14,7 +14,7 @@ const projects = [
         image: require('../assets/Flyers.jpg'),
         title: 'Flyers',
         description: 'Flyers Description',
-        collection: [],
+        collection: [ require('../assets/Flyers.jpg'), require('../assets/Flyers.jpg'), require('../assets/Flyers.jpg'), require('../assets/Flyers.jpg'),],
     },
     {
         image: require('../assets/Labeling.jpg'),
@@ -42,13 +42,13 @@ const projects = [
     },
     {
         image: require('../assets/Stock_Photo.jpg'),
-        title: 'Stock Photo',
+        title: 'Stock Photography',
         description: 'Stock Photo Description',
         collection: [],
     },
     {
         image: require('../assets/Product_Photo.jpg'),
-        title: 'Product Photo',
+        title: 'Product Photography',
         description: 'Product Photo Description',
         collection: [],
     },
@@ -63,13 +63,19 @@ const projects = [
 
 function Portfolio() {
     let [isOpen, setIsOpen] = useState(false)
+    let [Title, setTitle] = useState("")
+    let [Description, setDescription] = useState("")
+    let [Collection, setCollection] = useState([])
 
     function closeModal() {
       setIsOpen(false)
     }
   
-    function openModal() {
+    function openModal(title, description, collection) {
       setIsOpen(true)
+      setTitle(title)
+      setDescription(description)
+      setCollection(collection)
     }
 
   return (
@@ -93,7 +99,7 @@ function Portfolio() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:my-24 mx-6 md:mx-16 lg:mx-24 my-16">
                 {projects.map(({ image, title, description, collection, index }) => (
-                    <button type="button" onClick={openModal} key={title}>
+                    <button type="button" onClick={() => openModal(title, description, collection)} key={title}>
                         <ImageComponent 
                             key={index}
                             image={image} 
@@ -131,25 +137,19 @@ function Portfolio() {
                             <Dialog.Panel className="w-screen h-full transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                             {/* Title */}
                             <div className="items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-                                <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl md:text-left secondary-title text-text-primary">Portfolio</h1>
+                                <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl md:text-left secondary-title text-text-primary">{Title}</h1>
                             </div>
                             {/* Description */}
                             <div className="items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-                                <h1 className="text-xs md:text-sm lg:text-base md:text-left text-text-secondary">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</h1>
+                                <h1 className="text-xs md:text-sm lg:text-base md:text-left text-text-secondary">{Description}</h1>
                             </div>
                             {/* Gallery */}
                             <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-4 md:my-24 mx-6 md:mx-16 lg:mx-24 my-16">
-                                {projects.map(({ image, title, index }) => (
-                                    <button type="button" onClick={openModal} key={title}>
-                                        <ImageComponent key={index}
-                                        image={image} 
-                                        title={title}/></button>
-                                ))}
-                                {projects.map(({ image, title, index }) => (
-                                    <button type="button" onClick={openModal} key={title}>
-                                        <ImageComponent key={index}
-                                        image={image} 
-                                        title={title}/></button>
+                                {Collection.map((coll) => (
+                                    <button type="button" key={Title}>
+                                        <ImageComponent key={Title}
+                                        image={coll} 
+                                        title={Title}/></button>
                                 ))}
                             </div>
                             {/* Close */}

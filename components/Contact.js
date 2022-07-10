@@ -33,11 +33,11 @@ function Contact() {
 					<div className="">
                         <p className="font-semibold text-sm md:text-base lg:text-lg md:text-left text-text-primary">Feel free to to contact me any time, through any method.</p>
                         <a href="tel:+16473399019" className="flex mt-8 text-theme hover:font-bold">
-                            <svg className="fill-theme" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
+                            <svg className="fill-theme" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z"/></svg>                            
                             <p className="text-theme ml-4">(647) 339 - 9019</p>
                         </a>
                         <a href="mailto:email@mydomain.com" className="flex mt-4 text-theme underline hover:font-bold">
-                            <svg className="fill-theme" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z"/></svg>                            
+                            <svg className="fill-theme" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
                             <p className="ml-4">lana@mydomain.com</p>
                         </a>
 						<a href="https://www.linkedin.com/in/lanakosogova/" target="_blank" rel="noreferrer" className="flex mt-4 text-theme underline hover:font-bold">

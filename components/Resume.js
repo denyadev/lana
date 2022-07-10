@@ -18,7 +18,7 @@ function Resume() {
                                     <div className="pl-10">
                                         <span className="timeline-date">2000-2001</span>
                                         <h3 className="timeline-title">Master’s Degree in Programming</h3>
-                                        <h3 className="timeline-subtitle">Kherson State Technical University, Kherson, Ukraine</h3>
+                                        <h3 className="timeline-subtitle">Kherson State Technical University,<br/> Kherson, Ukraine</h3>
                                         <br/>
                                     </div>
                                 </div>
@@ -27,7 +27,7 @@ function Resume() {
                                     <div className="pl-10">
                                         <span className="timeline-date">1991-1996</span>
                                         <h3 className="timeline-title">Master’s Degree in Economics</h3>
-                                        <h3 className="timeline-subtitle">Kherson State Technical University, Kherson, Ukraine</h3>
+                                        <h3 className="timeline-subtitle">Kherson State Technical University,<br/> Kherson, Ukraine</h3>
                                         <br/>
                                     </div>
                                 </div>
@@ -36,22 +36,11 @@ function Resume() {
                                     <div className="pl-10">
                                         <span className="timeline-date">2021</span>
                                         <h3 className="timeline-title">CG Boost Academy</h3>
-                                        <h3 className="timeline-subtitle">Online Course: Blender and 3D art</h3>
+                                        <h3 className="timeline-subtitle">Online Course:<br/> Blender and 3D art</h3>
                                         <br/>
                                     </div>
                                 </div>
                             </div>
-                            <h1 className="pt-32 font-semibold text-sm md:text-base lg:text-lg md:text-left third-title text-text-primary">Languages</h1>
-                            <div className="">
-                                <div className="pl-10">
-                                    <ul className="timeline-subtitle list-disc leading-7">
-                                        <li>English</li>
-                                        <li>Russian</li>
-                                        <li>Ukrainian</li>
-                                    </ul>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                     
@@ -65,7 +54,7 @@ function Resume() {
                                     <div className="pl-10">
                                         <span className="timeline-date">Feb 2015 – <span className="r-present">Present (Full time)</span></span>
                                         <h3 className="timeline-title">Media Graphic Designer</h3>
-                                        <h3 className="timeline-subtitle">Hillman Group Canada, Toronto, ON</h3>
+                                        <h3 className="timeline-subtitle">Hillman Group Canada,<br/> Toronto, ON</h3>
                                         <br/>
                                     </div>
                                 </div>
@@ -74,7 +63,7 @@ function Resume() {
                                     <div className="pl-10">
                                         <span className="timeline-date">Sep 2014 – <span className="r-present">Present (Part time)</span></span>
                                         <h3 className="timeline-title">Graphic Designer</h3>
-                                        <h3 className="timeline-subtitle">RJS Enterprises Inc. - Golfpassport, Toronto, ON</h3>
+                                        <h3 className="timeline-subtitle">RJS Enterprises Inc. - Golfpassport,<br/> Toronto, ON</h3>
                                         <br/>
                                     </div>
                                 </div>
@@ -83,7 +72,7 @@ function Resume() {
                                     <div className="pl-10">
                                         <span className="timeline-date">Jun 2008 – Sep 2013</span>
                                         <h3 className="timeline-title">Web Graphic Designer</h3>
-                                        <h3 className="timeline-subtitle">Technovate Inc., Toronto, ON</h3>
+                                        <h3 className="timeline-subtitle">Technovate Inc.,<br/> Toronto, ON</h3>
                                         <br/>
                                     </div>
                                 </div>
@@ -92,7 +81,7 @@ function Resume() {
                                     <div className="pl-10">
                                         <span className="timeline-date">Mar 2008 - Apr 2008</span>
                                         <h3 className="timeline-title">Web Editor</h3>
-                                        <h3 className="timeline-subtitle">United Way Greater Toronto, Toronto, ON</h3>
+                                        <h3 className="timeline-subtitle">United Way Greater Toronto,<br/> Toronto, ON</h3>
                                         <br/>
                                     </div>
                                 </div>

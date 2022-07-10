@@ -6,11 +6,11 @@ function Navigation() {
         <div className="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
             <a href="#" className="text-xl font-bold text-text-primary">Lana.kosogova</a>
             <div className="hidden xl:flex space-x-12 items-center text-text-primary">
-                <a href="#" className="hover:text-theme hover:font-semibold">Home</a>
-                <a href="#about" className="hover:text-theme hover:font-semibold">About</a>
-                <a href="#resume" className="hover:text-theme hover:font-semibold">Resume</a>
-                <a href="#portfolio" className="hover:text-theme hover:font-semibold">Portfolio</a>
-                <a href="#testimonials" className="hover:text-theme hover:font-semibold">Testimonials</a>
+                <a href="#" className="hover:text-theme hover:fake-bold">Home</a>
+                <a href="#about" className="hover:text-theme hover:fake-bold">About</a>
+                <a href="#resume" className="hover:text-theme hover:fake-bold">Resume</a>
+                <a href="#portfolio" className="hover:text-theme hover:fake-bold">Portfolio</a>
+                <a href="#testimonials" className="hover:text-theme hover:fake-bold">Testimonials</a>
                 <a href="#contact" className="px-6 py-2 bg-theme border text-white font-semibold hover:bg-white hover:border hover:border-theme hover:text-text-primary">Contact</a>
             </div>
             <div className="xl:hidden">
