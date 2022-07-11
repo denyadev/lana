@@ -19,7 +19,7 @@ function Testimonials() {
 				<div className="space-y-12 my-16">
                     <div className="flex flex-col">
                         <div className="overflow-hidden md:relative max-w-full mx-auto bg-white shadow-lg ring-1 ring-black/5 gap-6 dark:bg-slate-100 dark:highlight-white/5">
-                            <div class="mx-10 my-7">
+                            <div className="mx-10 my-7">
                                 <div className="flex flex-row">
                                     <div className="ml-2"> 
                                         <Image src={c} alt="c" width="80" height="80" className="m-auto"/>
@@ -46,7 +46,7 @@ function Testimonials() {
                     </div>
                     <div className="flex flex-col">
                         <div className="overflow-hidden md:relative max-w-full mx-auto bg-white shadow-lg ring-1 ring-black/5 gap-6 dark:bg-slate-100 dark:highlight-white/5">
-                            <div class="mx-10 my-7">
+                            <div className="mx-10 my-7">
                                 <div className="flex flex-row">
                                     <div className="ml-2"> 
                                         <Image src={c} alt="c" width="80" height="80" className="m-auto"/>
@@ -74,7 +74,7 @@ function Testimonials() {
                     </div>
                     <div className="flex flex-col">
                         <div className="overflow-hidden md:relative max-w-full mx-auto bg-white shadow-lg ring-1 ring-black/5 gap-6 dark:bg-slate-100 dark:highlight-white/5">
-                            <div class="mx-10 my-7">
+                            <div className="mx-10 my-7">
                                 <div className="flex flex-row">
                                     <div className="ml-2"> 
                                         <Image src={c} alt="c" width="80" height="80" className="m-auto"/>
