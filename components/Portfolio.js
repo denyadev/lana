@@ -1,14 +1,65 @@
 import { React, useState, Fragment } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 
+import PhotoAlbum from "react-photo-album";
+import NextJsImage from "./NextJsImage";
+
 import ImageComponent from  './ImageComponent.js'
+
+const category = ["Signage, POP", "Flyers", "Labeling", "Books", "Sell Sheets", "3D Modeling", "Stock Photography", "Product Photography", "Stationery"]
 
 const projects = [
     {
         image: require('../assets/Signage.jpg'),
-        title: 'Signage',
+        title: 'Signage, POP',
         description: 'Signage Description',
-        collection: [ require('../assets/Signage.jpg'),  require('../assets/Signage.jpg'),  require('../assets/Signage.jpg'),  require('../assets/Signage.jpg'),  require('../assets/Signage.jpg')],
+        collection: [ 
+            {
+                src: require('../assets/img/book-open.jpg'),
+                width: 3300,
+                height: 2550
+            },
+            {
+                src: require('../assets/img/business-stationery-mock-up.jpg'),
+                width: 3000,
+                height: 1980
+            },
+            {
+                src: require('../assets/img/collection of boxes.jpg'),
+                width: 2000,
+                height: 1622
+            },
+            {
+                src: require('../assets/img/donut.jpg'),
+                width: 3000,
+                height: 819
+            },
+            {
+                src: require('../assets/img/donut010.png'),
+                width: 3666,
+                height: 2988
+            },
+            {
+                src: require('../assets/img/glass cup 01.jpg'),
+                width: 6287,
+                height: 5219
+            },
+            {
+                src: require('../assets/img/fur.jpg'),
+                width: 3000,
+                height: 819
+            },
+            {
+                src: require('../assets/img/Packages.jpg'),
+                width: 3000,
+                height: 1325
+            },
+            {
+                src: require('../assets/img/Packages2.jpg'),
+                width: 3000,
+                height: 1325
+            },
+         ],
     },
     {
         image: require('../assets/Flyers.jpg'),
@@ -36,7 +87,7 @@ const projects = [
     },
     {
         image: require('../assets/3D.jpg'),
-        title: '3D',
+        title: '3D Modeling',
         description: '3D Description',
         collection: [],
     },
@@ -82,20 +133,13 @@ function Portfolio() {
     <div id="portfolio" className="bg-slate-100">
         <div className="container m-auto py-6 md:py-24">
             <div className="items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-                <h1 className="hidden md:block font-bold text-5xl md:text-7xl lg:text-9xl md:text-left absolute left-24 text-text-primary/10">Portfolio</h1>
+                <h1 className="hidden md:block font-bold text-5xl md:text-7xl lg:text-9xl md:text-left absolute left-24 text-text-primary/10 select-none">Portfolio</h1>
                 <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl md:text-left secondary-title text-text-primary">Portfolio</h1>
             </div>
-            <div className="items-center mx-auto px-8 md:px-14 lg:px-24 w-full space-x-5 mt-24">
-                <a className="border-2 border-theme py-2 px-6 hover:bg-theme hover:text-white cursor-pointer">All</a>
-                <a className="border-2 border-theme py-2 px-6 hover:bg-theme hover:text-white cursor-pointer">Signage</a>
-                <a className="border-2 border-theme py-2 px-6 hover:bg-theme hover:text-white cursor-pointer">Flyers</a>
-                <a className="border-2 border-theme py-2 px-6 hover:bg-theme hover:text-white cursor-pointer">Labeling</a>
-                <a className="border-2 border-theme py-2 px-6 hover:bg-theme hover:text-white cursor-pointer">Books</a>
-                <a className="border-2 border-theme py-2 px-6 hover:bg-theme hover:text-white cursor-pointer">Sell Sheets</a>
-                <a className="border-2 border-theme py-2 px-6 hover:bg-theme hover:text-white cursor-pointer">3D</a>
-                <a className="border-2 border-theme py-2 px-6 hover:bg-theme hover:text-white cursor-pointer">Stock Photo</a>
-                <a className="border-2 border-theme py-2 px-6 hover:bg-theme hover:text-white cursor-pointer">Product Photo</a>
-                <a className="border-2 border-theme py-2 px-6 hover:bg-theme hover:text-white cursor-pointer">Stationery</a>
+            <div className="mx-auto px-8 md:px-14 lg:px-24 w-full space-x-2 mt-24">
+                {projects.map(({title, description, collection, index}) => (
+                    <a className="border-2 border-theme py-2 px-5 hover:bg-theme hover:text-white cursor-pointer" key={index} onClick={() => openModal(title, description, collection)}>{title}</a>
+                ))}
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:my-24 mx-6 md:mx-16 lg:mx-24 my-16">
                 {projects.map(({ image, title, description, collection, index }) => (
@@ -144,13 +188,8 @@ function Portfolio() {
                                 <h1 className="text-xs md:text-sm lg:text-base md:text-left text-text-secondary">{Description}</h1>
                             </div>
                             {/* Gallery */}
-                            <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-4 md:my-24 mx-6 md:mx-16 lg:mx-24 my-16">
-                                {Collection.map((coll) => (
-                                    <button type="button" key={Title}>
-                                        <ImageComponent key={Title}
-                                        image={coll} 
-                                        title={Title}/></button>
-                                ))}
+                            <div className="md:my-24 mx-6 md:mx-16 lg:mx-24 my-16">
+                                <PhotoAlbum layout="rows" photos={Collection} renderPhoto={NextJsImage} targetRowHeight={550}/>
                             </div>
                             {/* Close */}
                             <div className="absolute h-8 w-8 top-0 right-0 mr-32 mt-12 cursor-pointer hover:scale-110 fill-theme" onClick={closeModal}>  
