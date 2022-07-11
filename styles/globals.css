@@ -5,7 +5,7 @@
 @layer components {
 
     .fake-bold {
-        text-shadow: 0 0 .65px #008080, 0 0 .65px #008080, 0 0 .65px #008080;
+        text-shadow: 0 0 .65px #007390, 0 0 .65px #007390, 0 0 .65px #007390;
     }
     /* Resume */
     .r-border { @apply border rounded-2xl p-4 mb-2 lg:mb-7; }
@@ -16,7 +16,7 @@
     .r-text { @apply text-sm text-gray-500; }
     .r-ul { @apply list-disc p-6; }
 
-    .r-present { @apply  rounded bg-theme text-white p-1 font-semibold opacity-80; }
+    .r-present { @apply bg-theme text-white p-1 font-semibold opacity-80; }
 
     .timeline { @apply border-l-4 border-gray-200 ml-4 mt-3 py-2 space-y-4 -mb-20; }
     .dot { @apply absolute top-5 -left-3.5 bg-theme h-6 w-6 rounded-full border-2 border-white; }

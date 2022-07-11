@@ -7,7 +7,6 @@ function Contact() {
             <div className="">
                 <h1 className="hidden md:block font-bold text-5xl md:text-7xl lg:text-9xl md:text-left absolute left-24 text-text-primary/10 select-none">Contact</h1>
                 <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl md:text-left secondary-title text-text-primary">Contact</h1>
-                {/* <p className="section-paragraph">Feel free to to contact me any time, through any method below.</p> */}
             </div>
 			<section className="w-full">
 				<div className="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-16">
@@ -32,10 +31,6 @@ function Contact() {
 
 					<div className="">
                         <p className="font-semibold text-sm md:text-base lg:text-lg md:text-left text-text-primary">Feel free to to contact me any time, through any method.</p>
-                        {/* <a href="tel:+16473399019" className="flex mt-8 text-theme hover:font-bold">
-                            <svg className="fill-theme" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z"/></svg>                            
-                            <p className="text-theme ml-4">(647) 339 - 9019</p>
-                        </a> */}
                         <a href="mailto:email@mydomain.com" className="flex mt-4 text-theme underline hover:font-bold">
                             <svg className="fill-theme" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
                             <p className="ml-4">lana@mydomain.com</p>

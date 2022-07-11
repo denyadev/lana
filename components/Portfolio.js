@@ -183,12 +183,8 @@ function Portfolio() {
                             <div className="items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
                                 <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl md:text-left secondary-title text-text-primary">{Title}</h1>
                             </div>
-                            {/* Description */}
-                            <div className="items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-                                <h1 className="text-xs md:text-sm lg:text-base md:text-left text-text-secondary">{Description}</h1>
-                            </div>
                             {/* Gallery */}
-                            <div className="md:my-24 mx-6 md:mx-16 lg:mx-24 my-16">
+                            <div className="md:my-12 mx-6 md:mx-16 lg:mx-24 my-16">
                                 <PhotoAlbum layout="rows" photos={Collection} renderPhoto={NextJsImage} targetRowHeight={550}/>
                             </div>
                             {/* Close */}
