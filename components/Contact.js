@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contact() {
   return (
-    <div id="contact" className="bg-slate-100">
+    <div className="bg-slate-100">
 		<div className="container m-auto items-center mx-auto px-8 md:px-14 lg:px-24 w-full py-6 md:py-24">
             <div className="">
                 <h1 className="hidden md:block font-bold text-5xl md:text-7xl lg:text-9xl md:text-left absolute left-24 text-text-primary/10 select-none">Contact</h1>

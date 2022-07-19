@@ -8,7 +8,7 @@ import c from '../assets/c.png'
 
 function Testimonials() {
   return (
-    <div id="testimonials" className="">
+    <div className="">
 		<div className="container m-auto py-6 md:py-24 items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
             <div className="">
                 <h1 className="hidden md:block font-bold text-5xl md:text-7xl lg:text-9xl md:text-left absolute left-24 text-text-primary/10 select-none">Testimonials</h1>
@@ -21,8 +21,8 @@ function Testimonials() {
                         <div className="overflow-hidden md:relative max-w-full mx-auto bg-white shadow-lg ring-1 ring-black/5 gap-6 dark:bg-slate-100 dark:highlight-white/5">
                             <div className="mx-10 my-7">
                                 <div className="flex flex-row">
-                                    <div className="ml-2"> 
-                                        <Image src={c} alt="c" width="80" height="80" className="m-auto"/>
+                                    <div className="ml-11"> 
+                                        {/* <Image src={c} alt="c" width="80" height="80" className="m-auto"/> */}
                                     </div>
                                     <div className="mx-10">
                                         <span className="text-gray-500 text-sm">Svitlana is a dedicated team member with a keen eye for detail
@@ -48,8 +48,8 @@ function Testimonials() {
                         <div className="overflow-hidden md:relative max-w-full mx-auto bg-white shadow-lg ring-1 ring-black/5 gap-6 dark:bg-slate-100 dark:highlight-white/5">
                             <div className="mx-10 my-7">
                                 <div className="flex flex-row">
-                                    <div className="ml-2"> 
-                                        <Image src={c} alt="c" width="80" height="80" className="m-auto"/>
+                                    <div className="ml-11"> 
+                                        {/* <Image src={c} alt="c" width="80" height="80" className="m-auto"/> */}
                                     </div>
                                     <div className="mx-10">
                                         <span className="text-gray-500 text-sm pt-5">Lana is a very creative web designer. She has a wide array of
@@ -76,8 +76,8 @@ function Testimonials() {
                         <div className="overflow-hidden md:relative max-w-full mx-auto bg-white shadow-lg ring-1 ring-black/5 gap-6 dark:bg-slate-100 dark:highlight-white/5">
                             <div className="mx-10 my-7">
                                 <div className="flex flex-row">
-                                    <div className="ml-2"> 
-                                        <Image src={c} alt="c" width="80" height="80" className="m-auto"/>
+                                    <div className="ml-11"> 
+                                        {/* <Image src={c} alt="c" width="80" height="80" className="m-auto"/> */}
                                     </div>
                                     <div className="mx-10">
                                         <span className="text-gray-500 text-sm pt-5">Lana is a great designer with an eye for detail! She works well with

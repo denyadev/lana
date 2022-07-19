@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero() {
   return (
-    <div id="home" className="hidden md:block bg-[url('../assets/cover.jpg')] w-full h-64 md:h-[30rem] bg-cover md:bg-center md:px-14">
+    <div className="hidden md:block bg-[url('../assets/cover.jpg')] w-full h-64 md:h-[30rem] bg-cover md:bg-center md:px-14">
         <div className="container m-auto">
             <div className="flex flex-wrap md:flex-nowrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0">
                 <div className="text-white pt-12 md:pt-36">

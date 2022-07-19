@@ -9,7 +9,10 @@ import Testimonials from '../components/Testimonials.js'
 import Contact from '../components/Contact.js'
 import Footer from '../components/Footer.js'
 
+import { Link } from 'react-scroll'
+
 export default function Home() {
+
   return (
     <div>
       <Head>
@@ -23,30 +26,37 @@ export default function Home() {
 
       <div className="font-poppins scroll-smooth">
         <div className="fixed right-0 bottom-0 p-12 z-50">
-            <a href="#" className="px-1 py-1 border rounded-full bg-gray-500 text-white font-semibold mt-2 flex items-center space-x-3 hover:border hover:border-theme hover:text-text-primary group hover:bg-white">
+            <Link activeClass="active" className="hover:text-theme hover:fake-bold" to="home" spy={true} smooth={true} duration={500} offset={-50}> <a className="px-1 py-1 border rounded-full bg-gray-500 text-white font-semibold mt-2 flex items-center space-x-3 hover:border hover:border-theme hover:text-text-primary group hover:bg-white">
                 <svg className="h-8 w-8" fill="currentColor" clipRule="evenodd" fillRule="evenodd" strokeLinejoin="round" strokeMiterLimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.998 21.995c5.517 0 9.997-4.48 9.997-9.997 0-5.518-4.48-9.998-9.997-9.998-5.518 0-9.998 4.48-9.998 9.998 0 5.517 4.48 9.997 9.998 9.997zm4.843-8.211c.108.141.157.3.157.456 0 .389-.306.755-.749.755h-8.501c-.445 0-.75-.367-.75-.755 0-.157.05-.316.159-.457 1.203-1.554 3.252-4.199 4.258-5.498.142-.184.36-.29.592-.29.23 0 .449.107.591.291z" fillRule="nonzero"/></svg>
-            </a>
+            </a></Link>
+           
         </div>
         {/* Hero Section */}
-        <Hero/>
-
+        <section id="home">
+            <Hero/>
+        </section>
         {/* Navigation */}
         <Navigation/>
-
         {/* About Me */}
-        <About/>
-
+        <section id="about">
+            <About/>
+        </section>
         {/* Resume */}
-        <Resume/>
-
+        <section id="resume">
+            <Resume/>
+        </section>
         {/* Portfolio */}
-        <Portfolio/>
-
+        <section id="portfolio">
+            <Portfolio/>
+        </section>
         {/* Testimonials */}
-        <Testimonials/>
-
+        <section id="testimonials">
+            <Testimonials/>
+        </section>
         {/* Contact */}
-        <Contact/>
+        <section id="contact">
+            <Contact/>
+        </section>
 
         {/* Footer */}
         <Footer/>
