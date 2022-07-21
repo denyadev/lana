@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Lisa from '../assets/lisa.jpg'
 import Marcel from '../assets/marcel.jpg'
 import Daniel from '../assets/daniel.jpg'
-import c from '../assets/c.png'
 
 function Testimonials() {
   return (
@@ -16,16 +15,13 @@ function Testimonials() {
             </div>
 
 			<section className="w-full">
-				<div className="space-y-12 my-16">
+				<div className="space-y-12 my-8 md:my-24">
                     <div className="flex flex-col">
                         <div className="overflow-hidden md:relative max-w-full mx-auto bg-white shadow-lg ring-1 ring-black/5 gap-6 dark:bg-slate-100 dark:highlight-white/5">
-                            <div className="mx-10 my-7">
-                                <div className="flex flex-row">
-                                    <div className="ml-11"> 
-                                        {/* <Image src={c} alt="c" width="80" height="80" className="m-auto"/> */}
-                                    </div>
-                                    <div className="mx-10">
-                                        <span className="text-gray-500 text-sm">Svitlana is a dedicated team member with a keen eye for detail
+                            <div className="mx-4 lg:mx-10 my-7 flex flex-col-reverse text-center lg:flex-col lg:text-left">
+                                <div className="flex flex-row lg:ml-11">
+                                    <div className="md:mx-10">
+                                        <span className="text-gray-500 text-xs md:text-sm">Svitlana is a dedicated team member with a keen eye for detail
                                         and an excellent problem solver. She stepped into my position for
                                         six weeks and managed to pick up the loose threads with minimal
                                         supervision, keeping our content fresh and our code clean. Her
@@ -33,11 +29,11 @@ function Testimonials() {
                                         over last year&apos;s site. I highly recommend her!</span>
                                     </div>
                                 </div>
-                                <div className="flex flex-row">
+                                <div className="flex flex-row justify-center text-center mb-4 lg:mb-0 lg:justify-start">
                                     <div className="">
                                         <Image src={Lisa} alt="profilepic" width="50" height="50" className="rounded-full"/>
                                     </div>
-                                    <div className="mx-8 m-auto">
+                                    <div className="mx-2 md:mx-8 m-auto">
                                         <strong className="text-theme text-sm font-semibold">– Lisa Hayes<span className="font-normal text-xs">, on Sabbaticalon Sabbatical</span></strong>
                                     </div>
                                 </div>
@@ -46,13 +42,10 @@ function Testimonials() {
                     </div>
                     <div className="flex flex-col">
                         <div className="overflow-hidden md:relative max-w-full mx-auto bg-white shadow-lg ring-1 ring-black/5 gap-6 dark:bg-slate-100 dark:highlight-white/5">
-                            <div className="mx-10 my-7">
-                                <div className="flex flex-row">
-                                    <div className="ml-11"> 
-                                        {/* <Image src={c} alt="c" width="80" height="80" className="m-auto"/> */}
-                                    </div>
-                                    <div className="mx-10">
-                                        <span className="text-gray-500 text-sm pt-5">Lana is a very creative web designer. She has a wide array of
+                            <div className="mx-4 lg:mx-10 my-7 flex flex-col-reverse text-center lg:flex-col lg:text-left">
+                                <div className="flex flex-row lg:ml-11">
+                                    <div className="md:mx-10">
+                                        <span className="text-gray-500 text-xs md:text-sm">Lana is a very creative web designer. She has a wide array of
                                         knowledge with design programs and figures things out even
                                         when working with new technologies and always figures things out
                                         nicely. She has a flair for design that is uniquely her own. 
@@ -61,11 +54,11 @@ function Testimonials() {
                                         anyone looking to hire a freelancer to deliver great work!</span>
                                     </div>
                                 </div>
-                                <div className="flex flex-row">
+                                <div className="flex flex-row justify-center text-center mb-4 lg:mb-0 lg:justify-start">
                                     <div className="">
                                         <Image src={Marcel} alt="profilepic" width="50" height="50" className="rounded-full"/>
                                     </div>
-                                    <div className="mx-8 m-auto">
+                                    <div className="mx-2 md:mx-8 m-auto">
                                         <strong className="text-theme text-sm font-semibold">– Marcel Vilanez<span className="font-normal text-xs">, CEO at Technovate Translations</span></strong>
                                     </div>
                                 </div>
@@ -74,13 +67,10 @@ function Testimonials() {
                     </div>
                     <div className="flex flex-col">
                         <div className="overflow-hidden md:relative max-w-full mx-auto bg-white shadow-lg ring-1 ring-black/5 gap-6 dark:bg-slate-100 dark:highlight-white/5">
-                            <div className="mx-10 my-7">
-                                <div className="flex flex-row">
-                                    <div className="ml-11"> 
-                                        {/* <Image src={c} alt="c" width="80" height="80" className="m-auto"/> */}
-                                    </div>
-                                    <div className="mx-10">
-                                        <span className="text-gray-500 text-sm pt-5">Lana is a great designer with an eye for detail! She works well with
+                            <div className="mx-4 lg:mx-10 my-7 flex flex-col-reverse text-center lg:flex-col lg:text-left">
+                                <div className="flex flex-row lg:ml-11">
+                                    <div className="md:mx-10">
+                                        <span className="text-gray-500 text-xs md:text-sm">Lana is a great designer with an eye for detail! She works well with
                                         others and is always available to incorporate suggestions into her
                                         work. I would recommend Lana to anyone looking for a good
                                         graphic designer. Lana is a great designer with an eye for detail!
@@ -89,12 +79,12 @@ function Testimonials() {
                                         looking for a good graphic designer.</span>
                                     </div>
                                 </div>
-                                <div className="flex flex-row">
+                                <div className="flex flex-row justify-center text-center mb-4 lg:mb-0 lg:justify-start">
                                     <div className="">
                                         <Image src={Daniel} alt="profilepic" width="50" height="50" className="rounded-full"/>
                                     </div>
-                                    <div className="mx-8 m-auto">
-                                        <strong className="text-theme text-sm font-semibold">– Daniel Riber<span className="font-normal text-xs">, Account Executive at Intiveo</span></strong>
+                                    <div className="mx-2 md:mx-8 m-auto">
+                                    <strong className="text-theme text-sm font-semibold">– Daniel Riber<span className="font-normal text-xs">, Account Executive at Intiveo</span></strong>
                                     </div>
                                 </div>
                             </div>

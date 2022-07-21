@@ -11,6 +11,7 @@
     a.active {
         @apply underline decoration-theme decoration-2 underline-offset-4 fake-bold text-theme;
     }
+
     /* Resume */
     .r-border { @apply border rounded-2xl p-4 mb-2 lg:mb-7; }
 
@@ -199,5 +200,24 @@
     }
     .nice:hover {
         background: url("../assets/icons 50x50-30.svg") no-repeat;
+    }
+    .nik {
+        width: 65px;
+        height: 65px;
+        background: url("../assets/icons 50x50-31.svg") no-repeat;
+        display: inline-block;
+    }
+    .nik:hover {
+        background: url("../assets/icons 50x50-32.svg") no-repeat;
+    }
+
+    .fig {
+        width: 65px;
+        height: 65px;
+        background: url("../assets/icons 50x50-33.svg") no-repeat;
+        display: inline-block;
+    }
+    .fig:hover {
+        background: url("../assets/icons 50x50-34.svg") no-repeat;
     }
 }

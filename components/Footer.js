@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 
 function Footer() {
   return (
@@ -7,13 +8,15 @@ function Footer() {
             <div className="text-white font-bold text-3xl md:text-5xl p-2 drop-shadow-md">
                 Lana Kosogova
             </div>
-            <div className="hidden lg:flex space-x-12 items-center justify-center text-white/80 py-12">
-                <a href="#" className="hover:underline">Home</a>
-                <a href="#about" className="hover:underline">About</a>
-                <a href="#resume" className="hover:underline">Resume</a>
-                <a href="#portfolio" className="hover:underline">Portfolio</a>
-                <a href="#testimonials" className="hover:underline">Testimonials</a>
-                <a href="#contact" className="hover:underline">Contact</a>
+            <div>
+                <ul className="hidden lg:flex space-x-12 items-center justify-center text-white/80 py-12">
+                    <Link activeClass="active2" className="hover:underline cursor-pointer" to="home" spy={true} smooth={true} duration={500}>Home</Link>
+                    <Link activeClass="active2" className="hover:underline cursor-pointer" to="about" spy={true} smooth={true} duration={500}>About</Link>
+                    <Link activeClass="active2" className="hover:underline cursor-pointer" to="resume" spy={true} smooth={true} duration={500}>Resume</Link>
+                    <Link activeClass="active2" className="hover:underline cursor-pointer" to="portfolio" spy={true} smooth={true} duration={500}>Portfolio</Link>
+                    <Link activeClass="active2" className="hover:underline cursor-pointer" to="testimonials" spy={true} smooth={true} duration={500}>Testimonials</Link>
+                    <Link activeClass="active2" className="hover:underline cursor-pointer" to="contact" spy={true} smooth={true} duration={500}>Contact</Link>
+                </ul>
             </div>
             <hr className="w-1/2 m-auto p-2 opacity-50"/>
             <div className="text-white text-sm">

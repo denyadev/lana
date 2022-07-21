@@ -5,7 +5,8 @@ function Hero() {
     <div className="hidden md:block bg-[url('../assets/cover.jpg')] w-full h-64 md:h-[30rem] bg-cover md:bg-center md:px-14">
         <div className="container m-auto">
             <div className="flex flex-wrap md:flex-nowrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0">
-                <div className="text-white pt-12 md:pt-36">
+                <div className="text-white pt-12 md:pt-36 mx-auto">
+                    {/* items-center mx-auto px-8 md:px-14 lg:px-24 w-full */}
                     <h1 className="text-5xl md:text-7xl font-bold drop-shadow-md ">Lana Kosogova</h1>
                     <h2 className="text-2xl md:text-4xl pb-12 drop-shadow-md">Media Graphic Designer</h2>
                     <button className="px-8 py-3 border bg-theme text-white font-semibold mt-2 flex items-center space-x-3 hover:border hover:border-theme hover:text-text-primary group hover:bg-white">

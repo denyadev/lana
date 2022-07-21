@@ -1,6 +1,12 @@
-import { React } from 'react'
-import  Link from 'next/link'
-import ImageComponent from  './ImageComponent.js'
+
+import { React, useState, useEffect, Fragment } from 'react'
+import { Dialog, Transition } from '@headlessui/react'
+import { useRouter } from "next/router";
+import Link from 'next/link'
+
+import PhotoAlbum from "react-photo-album";
+import NextJsImage from "../components/NextJsImage";
+
 
 const projects = [
     // Signage, POP
@@ -437,49 +443,97 @@ const projects = [
          ],
     }];
 
+function Work() {
 
-function Portfolio() {
+    const [Collection, setCollection] = useState([])
+    const [Title, setTitle] = useState("")
+    let [isOpen, setIsOpen] = useState(false)
+
+    const router = useRouter();
+    const data = router.query;
+
+    useEffect(() => {
+        projects.map(project => {
+            if (project.title === data.title) {
+                setCollection(project.collection);
+                setTitle(project.title);
+                console.log(Collection);
+            }
+        })
+    });
+
+    function closeModal() {
+      setIsOpen(false)
+    }
+  
+    function openModal(title, collection) {
+      setIsOpen(true)
+      setTitle(title)
+      setCollection(collection)
+    }
 
   return (
-    <div className="bg-slate-100">
-        <div className="container m-auto py-6 md:py-24">
-            <div className="items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-                <h1 className="hidden md:block font-bold text-5xl md:text-7xl lg:text-9xl md:text-left absolute left-24 text-text-primary/10 select-none">Portfolio</h1>
-                <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl md:text-left secondary-title text-text-primary">Portfolio</h1>
-            </div>
-            <div className="flex flex-wrap lg:flex-nowrap mx-auto px-8 md:px-14 lg:px-24 w-full mt-4 md:mt-8 lg:mt-24 text-center">
-                {projects.map(({title, index}) => (
-                    <div key={index}>
-                        <Link href={{
-                            pathname: "/work",
-                            query: { title }, // the data
-                            }}>
-                            <a className="border-2 border-theme py-1 my-1 px-6 hover:bg-theme hover:text-white cursor-pointer mr-2">{title}</a>
-                        </Link>
-                    </div>
-                ))}
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-8 md:my-8 lg:my-12 mx-6 md:mx-16 lg:mx-24">
-                {projects.map(({ image, title, description, collection, index }) => (
-                    <div key={index}>
-                        <Link href={{
-                            pathname: "/work",
-                            query: { title }, // the data
-                            }}>
-                            <button type="button" key={title}>
-                            <ImageComponent 
-                                key={index}
-                                image={image} 
-                                title={title}
-                                description={description}
-                                collection={collection}/>
-                        </button></Link>
-                    </div>
-                ))}
-            </div>
+    <div className="items-center justify-center p-4 text-center mt-8">
+        {/* Title */}
+        <div className="items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+            <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl md:text-left secondary-title text-text-primary">{Title}</h1>
         </div>
+        {/* Gallery */}
+        <div className="md:my-12 mx-6 md:mx-16 lg:mx-24 my-16">
+            <PhotoAlbum layout="rows" photos={Collection} renderPhoto={NextJsImage} targetRowHeight={600} />
+        </div>
+        {/* Close */}
+        <Link href="/">
+            <div className="fixed top-0 h-8 w-8 right-0 mr-12 mt-12 cursor-pointer hover:scale-110 fill-theme">  
+                <svg clipRule="evenodd" fillRule="evenodd" strokeLinejoin="round" strokeMiterLimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg>
+            </div>
+        </Link>
+        <Transition appear show={isOpen} as={Fragment}>
+            <Dialog as="div" className="relative z-50" onClose={closeModal}>
+            <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0"
+                enterTo="opacity-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100"
+                leaveTo="opacity-0"
+            >
+                <div className="fixed inset-0 bg-black bg-opacity-60" />
+            </Transition.Child>
+
+            <div className="fixed inset-0 overflow-y-auto">
+                <div className="flex min-h-full items-center justify-center p-4 text-center">
+                    <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-300"
+                        enterFrom="opacity-0 scale-95"
+                        enterTo="opacity-100 scale-100"
+                        leave="ease-in duration-200"
+                        leaveFrom="opacity-100 scale-100"
+                        leaveTo="opacity-0 scale-95"
+                    >
+                        <Dialog.Panel className="w-screen h-full transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                        {/* Title */}
+                        <div className="items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+                            <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl md:text-left secondary-title text-text-primary">{Title}</h1>
+                        </div>
+                        {/* Gallery */}
+                        <div className="md:my-12 mx-6 md:mx-16 lg:mx-24 my-16">
+                            <PhotoAlbum layout="rows" photos={Collection} renderPhoto={NextJsImage} targetRowHeight={550}/>
+                        </div>
+                        </Dialog.Panel>
+                    </Transition.Child>
+                        {/* Close */}
+                        <div className="fixed top-0 h-8 w-8 right-0 mr-20 mt-12 cursor-pointer hover:scale-110 fill-theme" onClick={closeModal}>  
+                            <svg clipRule="evenodd" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg>
+                        </div>
+                </div>
+            </div>
+            </Dialog>
+        </Transition>
     </div>
   )
 }
 
-export default Portfolio
+export default Work
