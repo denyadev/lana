@@ -33,7 +33,7 @@ function Work(props) {
             </div>
             {/* Gallery */}
             <div className="md:my-12 mx-6 md:mx-16 lg:mx-24 my-16">
-                <PhotoAlbum layout="rows" photos={props.collection} renderPhoto={NextJsImage} targetRowHeight={600} onClick={(event, photo, index) => setIndex(index)}/>
+                <PhotoAlbum layout="rows" photos={props?.collection} renderPhoto={NextJsImage} targetRowHeight={600} onClick={(event, photo, index) => setIndex(index)}/>
                 <Lightbox
                     slides={props.collection}
                     open={index >= 0}
