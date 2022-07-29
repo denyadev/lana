@@ -8,7 +8,7 @@ function Resume() {
                 <h1 className="hidden md:block font-bold text-5xl md:text-7xl lg:text-9xl md:text-left absolute left-24 text-text-primary/10 select-none">Resume</h1>
                 <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl md:text-left secondary-title text-text-primary">Resume</h1>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:my-12 lg:my-24 mx-6 md:mx-14 lg:mx-24 my-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:my-12 lg:my-24 md:mx-14 lg:mx-24 my-8 mr-16">
             <div className="flex flex-row justify-center md:justify-start max-w-xl mt-0">
                 <div className="">
                     <h1 className="font-semibold text-sm md:text-base lg:text-lg md:text-left third-title text-text-primary">Education</h1>
@@ -54,17 +54,17 @@ function Resume() {
                     </button>
                     </div>
                 </div>
-                <div className="md:flex md:flex-row justify-center md:justify-start max-w-xl mt-0 pt-36 md:pt-0">
+                <div className="md:flex md:flex-row justify-center md:justify-start max-w-xl mt-8 mx-10 md:pt-0 md:mx-0">
                     <div className="">
                         <h1 className="font-semibold text-sm md:text-base lg:text-lg md:text-left third-title text-text-primary">Experience</h1>
                         <div className="timeline">
                             <div className="relative">
                                 <div className="dot"></div>
                                 <div className="pl-10">
-                                    <span className="timeline-date">Feb 2015 – <span className="r-present">Present (Full time)</span></span>
+                                    <span className="timeline-date">Feb 2015 – <span className="r-present">Present </span> (Full time)</span>
                                     <h3 className="timeline-title">Media Graphic Designer</h3>
                                     <h3 className="timeline-subtitle">Hillman Group Canada,<br/> Toronto, ON</h3>
-                                    <div className="grid grid-cols-2 text-theme text-xs mt-2">
+                                    <div className="lg:grid grid-cols-2 text-theme text-xs mt-2">
                                         <div className="p-2">
                                             <p>– Advert Design</p> 
                                             <p>– Line Drawing</p> 
@@ -81,10 +81,10 @@ function Resume() {
                             <div className="relative">
                                 <div className="dot"></div>
                                 <div className="pl-10">
-                                    <span className="timeline-date">Sep 2014 – <span className="r-present">Present (Part time)</span></span>
+                                    <span className="timeline-date">Sep 2014 – <span className="r-present">Present </span> (Part time)</span>
                                     <h3 className="timeline-title">Graphic Designer</h3>
                                     <h3 className="timeline-subtitle">RJS Enterprises Inc. - Golfpassport,<br/> Toronto, ON</h3>
-                                    <div className="grid grid-cols-2 text-theme text-xs mt-2">
+                                    <div className="lg:grid grid-cols-2 text-theme text-xs mt-2">
                                         <div className="p-2">
                                             <p>– Book layout</p> 
                                             <p>– Digital Imaging</p> 
@@ -102,7 +102,7 @@ function Resume() {
                                     <span className="timeline-date">Jun 2008 – Sep 2013</span>
                                     <h3 className="timeline-title">Web Graphic Designer</h3>
                                     <h3 className="timeline-subtitle">Technovate Inc.,<br/> Toronto, ON</h3>
-                                    <div className="grid grid-cols-2 text-theme text-xs mt-2">
+                                    <div className="lg:grid grid-cols-2 text-theme text-xs mt-2">
                                         <div className="p-2">
                                             <p>– Branding Design</p> 
                                             <p>– Marketing Materials</p> 
@@ -122,7 +122,7 @@ function Resume() {
                                     <span className="timeline-date">Mar 2008 - Apr 2008</span>
                                     <h3 className="timeline-title">Web Editor</h3>
                                     <h3 className="timeline-subtitle">United Way Greater Toronto,<br/> Toronto, ON</h3>
-                                    <div className="grid grid-cols-2 text-theme text-xs mt-2">
+                                    <div className="lg:grid grid-cols-2 text-theme text-xs mt-2">
                                         <div className="p-2">
                                             <p>– Website Maintaining</p> 
                                             <p>– Graphic Content</p> 
@@ -137,10 +137,10 @@ function Resume() {
                         </div>
                     </div>
                 </div>
-                <div className="justify-center text-ce md:justify-start max-w-xl mt-32 lg:mt-0 pt-36 md:pt-0">
-                    <h1 className="font-semibold text-sm md:text-base lg:text-lg md:text-left third-title text-text-primary">Expertise</h1>
-                    <div className="flex flex-col pt-8">
-                        <div className="space-x-2 flex text-center">
+                <div className="flex flex-col justify-center md:justify-start max-w-xl mt-32 mx-4 lg:mt-0 md:pt-0">
+                    <div className="flex flex-col pt-8 ">
+                        <h1 className="font-semibold text-sm md:text-base lg:text-lg md:text-left third-title text-text-primary mb-4 md:ml-32 lg:ml-0">Expertise</h1>
+                        <div className="space-x-2 flex text-center md:ml-32 lg:ml-0">
                             <div className="w-full">
                                 <div className="ps"></div>
                                 <p className="text-theme text-xs">Adobe Photoshop</p>
@@ -162,10 +162,10 @@ function Resume() {
                                 <p className="text-center text-theme text-xs">Adobe Premiere Pro</p>
                             </div>
                         </div>
-                        <div className="space-x-2 flex pt-8 text-center">
+                        <div className="space-x-2 flex pt-8 text-center md:ml-32 lg:ml-0">
                             <div className="w-full">
                                 <div className="dw"></div>
-                                <p className="text-center text-theme text-xs">Adobe Dreamweaver</p>
+                                <p className="hiddentext-center text-theme text-xs">Adobe Dreamw.</p>
                             </div>
                             <div className="w-full">
                                 <div className="css"></div>
@@ -184,7 +184,7 @@ function Resume() {
                                 <p className="text-center text-theme text-xs">MS Office</p>
                             </div>
                         </div>
-                        <div className="space-x-2 flex pt-8 text-center">
+                        <div className="space-x-2 flex pt-8 text-center md:ml-32 lg:ml-0">
                             <div className="w-full">
                                 <div className="bl"></div>
                                 <p className="text-center text-theme text-xs">Blender (3D)</p>
@@ -207,9 +207,9 @@ function Resume() {
                             </div>
                         </div>
                     </div>
-                    <h1 className="pt-10 font-semibold text-sm md:text-base lg:text-lg md:text-left third-title text-text-primary">Skills</h1>
                     <div className="">
-                        <div className="pl-10">
+                        <h1 className="pt-10 font-semibold text-sm md:text-base lg:text-lg md:text-left third-title text-text-primary mb-4">Skills</h1>
+                        <div className="ml-10 md:w-full">
                             <ul className="timeline-subtitle list-disc leading-7">
                                 <li>Strong graphic design skills</li>
                                 <li>Creativity & Flexibility</li>

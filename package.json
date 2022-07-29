@@ -1,5 +1,5 @@
 {
-  "name": "lana-portfolio",
+  "name": "lana-firebase",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,19 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.6.6",
-    "next": "12.2.0",
+    "firebase": "^9.9.1",
+    "firebase-admin": "^11.0.0",
+    "next": "12.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-photo-album": "^1.15.0",
+    "react-firebase-hooks": "^5.0.3",
+    "react-photo-album": "^1.16.1",
     "react-scroll": "^1.8.7",
-    "styled-components": "^5.3.5"
+    "yet-another-react-lightbox": "^1.10.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
-    "eslint": "8.19.0",
-    "eslint-config-next": "12.2.0",
+    "eslint": "8.20.0",
+    "eslint-config-next": "12.2.3",
     "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.4"
+    "tailwindcss": "^3.1.6"
   }
 }

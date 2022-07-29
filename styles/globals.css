@@ -25,7 +25,7 @@
 
     .timeline { @apply border-l-4 border-gray-200 ml-4 mt-3 py-2 space-y-4 -mb-20; }
     .dot { @apply absolute top-5 -left-3.5 bg-theme h-6 w-6 rounded-full border-2 border-white; }
-    .timeline-date { @apply text-xs font-bold tracking-widest text-gray-500; }
+    .timeline-date { @apply text-xs font-bold tracking-tighter md:tracking-widest text-gray-500; }
     .timeline-title { @apply text-base font-semibold pt-4 text-text-primary; }
     .timeline-subtitle { @apply text-sm font-semibold text-text-secondary; }
 
