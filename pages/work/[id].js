@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 import Link from 'next/link'
 
 import PhotoAlbum from "react-photo-album";
-import NextJsImage from "../NextJsImage"
+import NextJsImage from "../../components/NextJsImage.tsx"
 
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
@@ -32,7 +32,7 @@ function Work(props) {
         }), (error) => {
             console.log(error)
         }
-    }, [title])
+    }, [title, id])
 
     
     return (
@@ -44,15 +44,21 @@ function Work(props) {
             </div>
             {/* Gallery */}
             <div className="md:my-12 mx-6 md:mx-16 lg:mx-24 my-16">
-                <PhotoAlbum layout="rows" photos={myCollection} renderPhoto={NextJsImage} targetRowHeight={600} onClick={(event, photo, index) => setIndex(index)}/>
-                <Lightbox
-                    slides={myCollection}
-                    open={index >= 0}
-                    index={index}
-                    close={() => setIndex(-1)}
-                    // enable optional lightbox plugins
-                    plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
-                />
+                { myCollection ?
+                    <>
+                        <PhotoAlbum layout="rows" photos={myCollection} renderPhoto={NextJsImage} targetRowHeight={600} onClick={(event, photo, index) => setIndex(index)}/>
+                        <Lightbox
+                            slides={myCollection}
+                            open={index >= 0}
+                            index={index}
+                            close={() => setIndex(-1)}
+                            // enable optional lightbox plugins
+                            plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
+                        />
+                    </> 
+                :
+                    <div className="flex justify-center">Loading...</div>
+                }
             </div>
             {/* Close */}
             <Link href="/#portfolio">

@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import { PhotoProps } from "react-photo-album";
 
+type NextJsImageProps = PhotoProps & { wrapperProps?: React.HTMLAttributes<HTMLDivElement> };
 
-
-const NextJsImage = ({ photo, imageProps, wrapperProps }) => {
+const NextJsImage = ({ photo, imageProps, wrapperProps }: NextJsImageProps) => {
     const { width, height } = photo;
     const { src, alt, title, style, sizes, className, onClick } = imageProps;
     const { style: wrapperStyle, ...restWrapperProps } = wrapperProps ?? {};
