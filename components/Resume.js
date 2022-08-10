@@ -46,12 +46,12 @@ function Resume() {
                         <div className="mac"></div>
                         <div className="mt-4 pl-4 text-center text-theme text-xs">MAC and PC<br/> Platforms</div>
                     </div>
-                    <button className="px-8 py-3 border bg-theme text-white font-semibold mt-12 flex items-center space-x-3 hover:border hover:border-theme hover:text-text-primary group hover:bg-white">
+                    <a href="/api/lana-kosogova" download><button className="px-8 py-3 border bg-theme text-white font-semibold mt-12 flex items-center space-x-3 hover:border hover:border-theme hover:text-text-primary group hover:bg-white">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clipRule="evenodd" />
                         </svg>
                         <p>Download Resume</p>
-                    </button>
+                    </button></a>
                     </div>
                 </div>
                 <div className="md:flex md:flex-row justify-center md:justify-start max-w-xl mt-8 mx-10 md:pt-0 md:mx-0">

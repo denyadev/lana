@@ -10,7 +10,7 @@ function ImageComponent( { id, image } ) {
         </a>
         <a href="#" className="relative">
             <div className=" flex flex-wrap content-center">
-                <Image src={ image } className="mx-auto" alt={id} width="500%" height="500%"/>
+                <Image src={ image } className="mx-auto" alt={id} width="500%" height="400%"/>
             </div>
         </a>
     </div>
