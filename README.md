@@ -10,7 +10,8 @@ Designed and developed a fully responsive portfolio for a Graphic Designer. Stor
 
 - [Next.js](https://nextjs.org/)
 - [TailwindCSS](https://tailwindcss.com/)
-- [Firebase](https://firebase.google.com/)
+- [Firebase Storage](https://firebase.google.com/)
+- [Firestore Database](https://firebase.google.com/)
 
 - This project is deployed using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
