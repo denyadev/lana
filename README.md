@@ -4,7 +4,7 @@
 
 ## Description
 
-Designed and developed a beautiful and fully responsive static web application for an Accounting firm in Mississauga. Really focused on improving the visual aesthetic of their old website by using common UI/UX principles.
+Designed and developed a fully responsive portfolio for a Graphic Designer. Stored the images on a Firebase storage bucket and served using the Firestore Database.
 
 ## Tech Stack
 
