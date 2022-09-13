@@ -4,6 +4,14 @@
 
 @layer components {
 
+    .header {
+        @apply py-2 sticky top-0 z-50 shadow-md bg-white;
+    }
+
+    .header-active {
+        @apply py-2 sticky top-0 z-50 shadow-md bg-white;
+    }
+
     .fake-bold {
         text-shadow: 0 0 .65px #007390, 0 0 .65px #007390, 0 0 .65px #007390;
     }
@@ -57,167 +65,167 @@
     .ps {
         width: 65px;
         height: 65px;
-        background: url("../assets/icons 50x50-01.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-01.svg") no-repeat;
         display: inline-block;
     }
     .ps:hover {
-        background: url("../assets/icons 50x50-02.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-02.svg") no-repeat;
     }
 
     .ai {
         width: 65px;
         height: 65px;
-        background: url("../assets/icons 50x50-03.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-03.svg") no-repeat;
         display: inline-block;
     }
     .ai:hover {
-        background: url("../assets/icons 50x50-04.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-04.svg") no-repeat;
     }
 
     .id {
         width: 65px;
         height: 65px;
-        background: url("../assets/icons 50x50-05.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-05.svg") no-repeat;
         display: inline-block;
     }
     .id:hover {
-        background: url("../assets/icons 50x50-06.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-06.svg") no-repeat;
     }
 
     .lr {
         width: 65px;
         height: 65px;
-        background: url("../assets/icons 50x50-07.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-07.svg") no-repeat;
         display: inline-block;
     }
     .lr:hover {
-        background: url("../assets/icons 50x50-08.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-08.svg") no-repeat;
     }
     .pr {
         width: 65px;
         height: 65px;
-        background: url("../assets/icons 50x50-09.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-09.svg") no-repeat;
         display: inline-block;
     }
     .pr:hover {
-        background: url("../assets/icons 50x50-10.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-10.svg") no-repeat;
     }
     /* Next 5-10 */
     .dw {
         width: 65px;
         height: 65px;
-        background: url("../assets/icons 50x50-11.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-11.svg") no-repeat;
         display: inline-block;
     }
     .dw:hover {
-        background: url("../assets/icons 50x50-12.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-12.svg") no-repeat;
     }
 
     .css {
         width: 65px;
         height: 65px;
-        background: url("../assets/icons 50x50-13.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-13.svg") no-repeat;
         display: inline-block;
     }
     .css:hover {
-        background: url("../assets/icons 50x50-14.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-14.svg") no-repeat;
     }
 
     .acr {
         width: 65px;
         height: 65px;
-        background: url("../assets/icons 50x50-15.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-15.svg") no-repeat;
         display: inline-block;
     }
     .acr:hover {
-        background: url("../assets/icons 50x50-16.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-16.svg") no-repeat;
     }
 
     .html {
         width: 65px;
         height: 65px;
-        background: url("../assets/icons 50x50-17.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-17.svg") no-repeat;
         display: inline-block;
     }
     .html:hover {
-        background: url("../assets/icons 50x50-18.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-18.svg") no-repeat;
     }
     .off {
         width: 65px;
         height: 65px;
-        background: url("../assets/icons 50x50-19.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-19.svg") no-repeat;
         display: inline-block;
     }
     .off:hover {
-        background: url("../assets/icons 50x50-20.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-20.svg") no-repeat;
     }
 
     /* Next 10-15 */
     .bl {
         width: 65px;
         height: 65px;
-        background: url("../assets/icons 50x50-21.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-21.svg") no-repeat;
         display: inline-block;
     }
     .bl:hover {
-        background: url("../assets/icons 50x50-22.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-22.svg") no-repeat;
     }
 
     .sw {
         width: 65px;
         height: 65px;
-        background: url("../assets/icons 50x50-23.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-23.svg") no-repeat;
         display: inline-block;
     }
     .sw:hover {
-        background: url("../assets/icons 50x50-24.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-24.svg") no-repeat;
     }
 
     .pc {
         width: 65px;
         height: 65px;
-        background: url("../assets/icons 50x50-25.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-25.svg") no-repeat;
         display: inline-block;
     }
     .pc:hover {
-        background: url("../assets/icons 50x50-26.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-26.svg") no-repeat;
     }
 
     .mac {
         width: 65px;
         height: 65px;
-        background: url("../assets/icons 50x50-27.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-27.svg") no-repeat;
         display: inline-block;
     }
     .mac:hover {
-        background: url("../assets/icons 50x50-28.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-28.svg") no-repeat;
     }
     .nice {
         width: 65px;
         height: 65px;
-        background: url("../assets/icons 50x50-29.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-29.svg") no-repeat;
         display: inline-block;
     }
     .nice:hover {
-        background: url("../assets/icons 50x50-30.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-30.svg") no-repeat;
     }
     .nik {
         width: 65px;
         height: 65px;
-        background: url("../assets/icons 50x50-31.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-31.svg") no-repeat;
         display: inline-block;
     }
     .nik:hover {
-        background: url("../assets/icons 50x50-32.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-32.svg") no-repeat;
     }
 
     .fig {
         width: 65px;
         height: 65px;
-        background: url("../assets/icons 50x50-33.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-33.svg") no-repeat;
         display: inline-block;
     }
     .fig:hover {
-        background: url("../assets/icons 50x50-34.svg") no-repeat;
+        background: url("../assets/icons/icons 50x50-34.svg") no-repeat;
     }
 }

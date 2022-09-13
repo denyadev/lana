@@ -5,17 +5,17 @@ import Lisa from '../assets/lisa.jpg'
 import Marcel from '../assets/marcel.jpg'
 import Daniel from '../assets/daniel.jpg'
 
-function Testimonials() {
+const Testimonials = () => {
   return (
     <div className="">
-		<div className="container m-auto py-6 md:py-24 items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+		<div className="container m-auto py-24 items-center mx-auto w-full">
             <div className="">
                 <h1 className="hidden md:block font-bold text-5xl md:text-7xl lg:text-9xl md:text-left absolute left-24 text-text-primary/10 select-none">Testimonials</h1>
                 <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl md:text-left secondary-title text-text-primary">Testimonials</h1>
             </div>
 
 			<section className="w-full">
-				<div className="space-y-12 my-8 md:my-24">
+				<div className="space-y-12 py-24">
                     <div className="flex flex-col">
                         <div className="overflow-hidden md:relative max-w-full mx-auto bg-white shadow-lg ring-1 ring-black/5 gap-6 dark:bg-slate-100 dark:highlight-white/5">
                             <div className="mx-4 lg:mx-10 my-7 flex flex-col-reverse text-center lg:flex-col lg:text-left">

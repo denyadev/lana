@@ -1,16 +1,15 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 
-function Footer() {
+const Footer = () => {
   return (
     <footer>
-        <div className="w-full text-center pt-10 pb-10 lg:pt-10 lg:pb-10 bg-theme">
+        <div className="w-full text-center py-12 bg-theme">
             <div className="text-white font-bold text-3xl md:text-5xl p-2 drop-shadow-md">
-                Lana Kosogova
+                <Link activeClass="active2" className="cursor-pointer" to="home" spy={true} smooth={true} duration={500}>Lana Kosogova</Link>
             </div>
             <div>
                 <ul className="hidden lg:flex space-x-12 items-center justify-center text-white/80 py-12">
-                    <Link activeClass="active2" className="hover:underline cursor-pointer" to="home" spy={true} smooth={true} duration={500}>Home</Link>
                     <Link activeClass="active2" className="hover:underline cursor-pointer" to="about" spy={true} smooth={true} duration={500}>About</Link>
                     <Link activeClass="active2" className="hover:underline cursor-pointer" to="resume" spy={true} smooth={true} duration={500}>Resume</Link>
                     <Link activeClass="active2" className="hover:underline cursor-pointer" to="portfolio" spy={true} smooth={true} duration={500}>Portfolio</Link>

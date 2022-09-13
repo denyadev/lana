@@ -1,14 +1,14 @@
 import React from 'react'
 
-function About() {
+const About = () => {
   return (
     <div className="bg-slate-100">
-        <div className="container m-auto py-6 md:py-24 lg:py-40">
-            <div className="items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <div className="container m-auto py-24">
+            <div className="items-center mx-auto">
                 <h1 className="hidden md:block font-bold text-5xl md:text-7xl lg:text-9xl md:text-left absolute left-24 text-text-primary/10 select-none">About me</h1>
                 <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl md:text-left secondary-title text-text-primary">About me</h1>
             </div>
-            <div className="md:grid grid-cols-3 gap-4 justify-between lg:items-center md:mt-24 mx-8 md:mx-14 lg:mx-24 my-10 lg:mt-32">
+            <div className="md:grid grid-cols-3 gap-4 justify-between lg:items-center py-24">
                 <div className="lg:mr-24">
                     <h2 className="font-semibold text-sm md:text-base lg:text-2xl md:text-left text-text-primary md:mb-4 mb-4">A talented</h2>
                     <h1 className="font-bold text-3xl md:text-3xl lg:text-5xl md:text-left text-theme md:mb-2">Media</h1>

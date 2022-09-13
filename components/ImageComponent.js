@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-function ImageComponent( { id, image } ) {
+const ImageComponent = ( { id, image } ) => {
   return (
     <div className="relative">
         <a className="absolute inset-0 z-10 bg-black text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-opacity-80 duration-300 cursor-pointer">

@@ -1,6 +1,4 @@
-
 import { React, useState, useEffect } from 'react'
-import axios from 'axios'
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { useRouter } from "next/router";
@@ -15,6 +13,8 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
+import { images } from '../../public/images'
+
 function Work(props) {
 
     const [index, setIndex] = useState(-1);
@@ -24,20 +24,30 @@ function Work(props) {
     const [myCollection, setMyCollection] = useState([])
     const [title, setTitle] = useState('')
 
-    useEffect(() => {
-        axios.get(`/api/projects/${id}`).then((response) => {
-            console.log(response.data)
-            setMyCollection(response.data.collection)
-            setTitle(response.data.title)
-        }), (error) => {
-            console.log(error)
-        }
-    }, [title, id])
+    const [ categories, setCategories ] = useState([])
 
-    
+    useEffect(() => {
+        categorySetter()
+        imageMapper()
+    })
+
+    const categorySetter = async () => {
+        await setCategories(images)
+    }
+
+    const imageMapper = async () => {
+        await categories.forEach(element => {
+            if (element.id === id) {
+                setMyCollection(element.collection)
+                setTitle(element.title)
+            }
+        })
+    }
+
     return (
         
         <div className="items-center justify-center p-4 text-center mt-8">
+            {id}
             {/* Title */}
             <div className="items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
                 <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl md:text-left secondary-title text-text-primary">{title}</h1>
