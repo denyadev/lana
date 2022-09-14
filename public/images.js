@@ -64,7 +64,7 @@ export const images = [
             src: require('../assets/3d/3d_01.jpg'), width: '3000', height: '1359',
             src: require('../assets/3d/3d_02.jpg'), width: '3000', height: '819',
             src: require('../assets/3d/3d_03.jpg'), width: '3000', height: '819',
-            src: require('../assets/3d/3d_04.jpg'), width: '1500', height: '1223',
+            src: require('../assets/3d/3d_04.png'), width: '1500', height: '1223',
             src: require('../assets/3d/3d_05.jpg'), width: '1500', height: '1245',
             src: require('../assets/3d/3d_06.jpg'), width: '1500', height: '1089',
             src: require('../assets/3d/3d_07.jpg'), width: '3000', height: '1325',
