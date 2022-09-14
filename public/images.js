@@ -25,11 +25,11 @@ export const images = [
             // { src: require('../assets/flyers_sell_sheets/ss_02.jpg'), width: '2560', height: '2320' },
             // { src: require('../assets/flyers_sell_sheets/ss_03.jpg'), width: '2560', height: '2320' },
             // { src: require('../assets/flyers_sell_sheets/ss_04.jpg'), width: '2560', height: '2320' },
-            { src: require('../assets/flyers_sell_sheets/flyer_01.jpg'), width: '2500', height: '2400' },
-            { src: require('../assets/flyers_sell_sheets/flyer_02.jpg'), width: '2500', height: '2400' },
-            { src: require('../assets/flyers_sell_sheets/flyer_03.jpg'), width: '2500', height: '2400' },
-            { src: require('../assets/flyers_sell_sheets/flyer_04.jpg'), width: '2500', height: '2400' },
-            { src: require('../assets/flyers_sell_sheets/flyer_05.jpg'), width: '2500', height: '2400' }
+            // { src: require('../assets/flyers_sell_sheets/flyer_01.jpg'), width: '2500', height: '2400' },
+            // { src: require('../assets/flyers_sell_sheets/flyer_02.jpg'), width: '2500', height: '2400' },
+            // { src: require('../assets/flyers_sell_sheets/flyer_03.jpg'), width: '2500', height: '2400' },
+            // { src: require('../assets/flyers_sell_sheets/flyer_04.jpg'), width: '2500', height: '2400' },
+            // { src: require('../assets/flyers_sell_sheets/flyer_05.jpg'), width: '2500', height: '2400' }
         ]
     },
     {
