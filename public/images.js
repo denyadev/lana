@@ -4,7 +4,7 @@ export const images = [
         title: 'Signage, POP',
         image: require('../assets/signage_pop/pop_00.jpg'),
         collection: [
-            { src: require('../assets/signage_pop/pop_01.jpg'), width: '1467', height: '2665' },
+            // { src: require('../assets/signage_pop/pop_01.jpg'), width: '1467', height: '2665' },
             { src: require('../assets/signage_pop/pop_02.jpg'), width: '900', height: '1400' },
             { src: require('../assets/signage_pop/pop_03.jpg'), width: '2570', height: '320' },
             { src: require('../assets/signage_pop/pop_04.jpg'), width: '2570', height: '540' },
@@ -21,10 +21,10 @@ export const images = [
         title: 'Flyers, Sell Sheets',
         image: require('../assets/flyers_sell_sheets/ss_00.jpg'),
         collection: [
-            { src: require('../assets/flyers_sell_sheets/ss_01.jpg'), width: '2560', height: '2320' },
-            { src: require('../assets/flyers_sell_sheets/ss_02.jpg'), width: '2560', height: '2320' },
-            { src: require('../assets/flyers_sell_sheets/ss_03.jpg'), width: '2560', height: '2320' },
-            { src: require('../assets/flyers_sell_sheets/ss_04.jpg'), width: '2560', height: '2320' },
+            // { src: require('../assets/flyers_sell_sheets/ss_01.jpg'), width: '2560', height: '2320' },
+            // { src: require('../assets/flyers_sell_sheets/ss_02.jpg'), width: '2560', height: '2320' },
+            // { src: require('../assets/flyers_sell_sheets/ss_03.jpg'), width: '2560', height: '2320' },
+            // { src: require('../assets/flyers_sell_sheets/ss_04.jpg'), width: '2560', height: '2320' },
             { src: require('../assets/flyers_sell_sheets/flyer_01.jpg'), width: '2500', height: '2400' },
             { src: require('../assets/flyers_sell_sheets/flyer_02.jpg'), width: '2500', height: '2400' },
             { src: require('../assets/flyers_sell_sheets/flyer_03.jpg'), width: '2500', height: '2400' },
