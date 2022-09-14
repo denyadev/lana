@@ -47,11 +47,9 @@ function Work(props) {
     return (
         
         <div className="items-center justify-center p-4 text-center mt-8">
-            {/* Title */}
             <div className="items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
                 <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl md:text-left secondary-title text-text-primary">{title}</h1>
             </div>
-            {/* Gallery */}
             <div className="md:my-12 mx-6 md:mx-16 lg:mx-24 my-16">
                 { myCollection ?
                     <>
