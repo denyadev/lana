@@ -20,7 +20,7 @@ const Portfolio = () => {
             </div>
             <div className="flex flex-wrap lg:flex-nowrap mx-auto w-full py-24 text-center">
                 {categories.map(({id, title}) => (
-                    <div key={title} className="flex">
+                    <div key={id} className="flex">
                         <Link href={{
                             pathname: "/work/[id]",
                             query: { 

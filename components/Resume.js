@@ -61,7 +61,7 @@ const Resume = () => {
                         <div className="relative">
                             <div className="dot"></div>
                             <div className="pl-10">
-                                <span className="timeline-date">Feb 2015 – <span className="r-present">Present </span> (Full time)</span>
+                                <span className="timeline-date">Feb 2015 – <span className="r-present px-2">Present</span> (Full time)</span>
                                 <h3 className="timeline-title">Media Graphic Designer</h3>
                                 <h3 className="timeline-subtitle">Hillman Group Canada,<br/> Toronto, ON</h3>
                                 <div className="lg:grid grid-cols-2 text-theme text-xs mt-2">
@@ -81,7 +81,7 @@ const Resume = () => {
                         <div className="relative">
                             <div className="dot"></div>
                             <div className="pl-10">
-                                <span className="timeline-date">Sep 2014 – <span className="r-present">Present </span> (Part time)</span>
+                                <span className="timeline-date">Sep 2014 – <span className="r-present px-2">Present</span> (Part time)</span>
                                 <h3 className="timeline-title">Graphic Designer</h3>
                                 <h3 className="timeline-subtitle">RJS Enterprises Inc. - Golfpassport,<br/> Toronto, ON</h3>
                                 <div className="lg:grid grid-cols-2 text-theme text-xs mt-2">
@@ -137,8 +137,8 @@ const Resume = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col justify-center md:justify-start max-w-xl mt-32 mx-4 lg:mt-0 md:pt-0">
-                <div className="flex flex-col pt-8 ">
+            <div className="flex flex-col justify-center md:justify-start max-w-xl mt-32 lg:mt-0 md:pt-0">
+                <div className="flex flex-col pt-8">
                     <h1 className="font-semibold text-sm md:text-base lg:text-lg md:text-left third-title text-text-primary mb-4 md:ml-32 lg:ml-0">Expertise</h1>
                     <div className="space-x-2 flex text-center md:ml-32 lg:ml-0">
                         <div className="w-full">
@@ -159,7 +159,7 @@ const Resume = () => {
                         </div>
                         <div className="w-full">
                             <div className="pr"></div>
-                            <p className="text-center text-theme text-xs">Adobe Premiere Pro</p>
+                            <p className="text-center text-theme text-xs">Adobe Premiere</p>
                         </div>
                     </div>
                     <div className="space-x-2 flex pt-8 text-center md:ml-32 lg:ml-0">

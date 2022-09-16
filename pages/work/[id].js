@@ -55,7 +55,13 @@ function Work(props) {
                     <>
                         <PhotoAlbum layout="rows" photos={myCollection} renderPhoto={NextJsImage} targetRowHeight={600} onClick={(event, photo, index) => setIndex(index)}/>
                         <Lightbox
-                            slides={myCollection}
+                            slides={[{
+                            src: "",
+                            alt: "image 1",
+                            width: 3840,
+                            height: 2560,
+                            srcSet: [myCollection]
+                            }]}
                             open={index >= 0}
                             index={index}
                             close={() => setIndex(-1)}
