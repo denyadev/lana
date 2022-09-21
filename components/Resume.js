@@ -129,7 +129,7 @@ const Resume = () => {
                                     </div>
                                     <div className="p-2">
                                         <p>– Event Design</p> 
-                                        <p>– Event Design</p> 
+                                        <p>– XXX XXX</p> 
                                     </div>
                                 </div>
                             </div>

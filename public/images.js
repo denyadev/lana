@@ -59,21 +59,21 @@ export const images = [
     {
         id: '5',
         title: '3D Modeling',
-        image: require('../public/3D/3d_00.jpg'),
+        image: require('../public/3d/3d_00.jpg'),
         collection: [
-            { src: require('../public/3D/3d_01.jpg'), width: '3000', height: '1359' },
-            { src: require('../public/3D/3d_02.jpg'), width: '3000', height: '819' },
-            { src: require('../public/3D/3d_03.jpg'), width: '3000', height: '819' },
-            { src: require('../public/3D/3d_04.png'), width: '1500', height: '1223' },
-            { src: require('../public/3D/3d_05.jpg'), width: '1500', height: '1245' },
-            { src: require('../public/3D/3d_06.jpg'), width: '1500', height: '1089' },
-            { src: require('../public/3D/3d_07.jpg'), width: '3000', height: '1325' },
-            { src: require('../public/3D/3d_08.jpg'), width: '3000', height: '1325' },
-            { src: require('../public/3D/3d_09.jpg'), width: '3000', height: '889' },
-            { src: require('../public/3D/3d_10.jpg'), width: '1500', height: '1217' },
-            { src: require('../public/3D/3d_11.jpg'), width: '1500', height: '1027' },
-            { src: require('../public/3D/3d_12.jpg'), width: '1500', height: '1500' },
-            { src: require('../public/3D/3d_13.jpg'), width: '3000', height: '819' }
+            { src: require('../public/3d/3d_01.jpg'), width: '3000', height: '1359' },
+            { src: require('../public/3d/3d_02.jpg'), width: '3000', height: '819' },
+            { src: require('../public/3d/3d_03.jpg'), width: '3000', height: '819' },
+            { src: require('../public/3d/3d_04.png'), width: '1500', height: '1223' },
+            { src: require('../public/3d/3d_05.jpg'), width: '1500', height: '1245' },
+            { src: require('../public/3d/3d_06.jpg'), width: '1500', height: '1089' },
+            { src: require('../public/3d/3d_07.jpg'), width: '3000', height: '1325' },
+            { src: require('../public/3d/3d_08.jpg'), width: '3000', height: '1325' },
+            { src: require('../public/3d/3d_09.jpg'), width: '3000', height: '889' },
+            { src: require('../public/3d/3d_10.jpg'), width: '1500', height: '1217' },
+            { src: require('../public/3d/3d_11.jpg'), width: '1500', height: '1027' },
+            { src: require('../public/3d/3d_12.jpg'), width: '1500', height: '1500' },
+            { src: require('../public/3d/3d_13.jpg'), width: '3000', height: '819' }
         ]
     },
     {
