@@ -45,15 +45,15 @@ export const images = [
     {
         id: '4',
         title: 'Books, Catalogues',
-        image: require('../public/Books_catalogues/book_00.jpg'),
+        image: require('../public/books_catalogues/book_00.jpg'),
         collection: [
-            { src: require('../public/Books_catalogues/book_01.jpg'), width: '3300', height: '2550' },
-            { src: require('../public/Books_catalogues/book_02.jpg'), width: '3300', height: '2550' },
-            { src: require('../public/Books_catalogues/book_03.jpg'), width: '3300', height: '2550' },
-            { src: require('../public/Books_catalogues/catalogues_01.jpg'), width: '3000', height: '2000' },
-            { src: require('../public/Books_catalogues/catalogues_02.jpg'), width: '4500', height: '3000' },
-            { src: require('../public/Books_catalogues/catalogues_03.jpg'), width: '3300', height: '2550' },
-            { src: require('../public/Books_catalogues/manual_01.jpg'), width: '3065', height: '2038' },
+            { src: require('../public/books_catalogues/book_01.jpg'), width: '3300', height: '2550' },
+            { src: require('../public/books_catalogues/book_02.jpg'), width: '3300', height: '2550' },
+            { src: require('../public/books_catalogues/book_03.jpg'), width: '3300', height: '2550' },
+            { src: require('../public/books_catalogues/catalogues_01.jpg'), width: '3000', height: '2000' },
+            { src: require('../public/books_catalogues/catalogues_02.jpg'), width: '4500', height: '3000' },
+            { src: require('../public/books_catalogues/catalogues_03.jpg'), width: '3300', height: '2550' },
+            { src: require('../public/books_catalogues/manual_01.jpg'), width: '3065', height: '2038' },
         ]
     },
     {
