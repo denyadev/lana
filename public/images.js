@@ -104,7 +104,6 @@ export const images = [
         image: require('../public/stock_photo/stock_00.jpg'),
         collection: [
             { src: require('../public/stock_photo/stock_11.jpg'), width: '2800', height: '1800' },
-            { src: require('../public/stock_photo/stock_12.jpg'), width: '2800', height: '1800' },
             { src: require('../public/stock_photo/stock_13.jpg'), width: '2800', height: '1800' },
             { src: require('../public/stock_photo/stock_21.jpg'), width: '2800', height: '1800' },
             { src: require('../public/stock_photo/stock_22.jpg'), width: '2800', height: '1800' },
