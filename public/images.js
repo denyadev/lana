@@ -87,7 +87,6 @@ export const images = [
             { src: require('../public/product_photo/photo_04.jpg'), width: '2000', height: '2000' },
             { src: require('../public/product_photo/photo_05.jpg'), width: '2000', height: '2000' },
             { src: require('../public/product_photo/photo_06.jpg'), width: '2000', height: '2000' },
-            { src: require('../public/product_photo/photo_07.jpg'), width: '2000', height: '2000' },
             { src: require('../public/product_photo/photo_08.jpg'), width: '2000', height: '2000' },
             { src: require('../public/product_photo/photo_09.jpg'), width: '2000', height: '2000' },
             { src: require('../public/product_photo/photo_10.jpg'), width: '2000', height: '2000' },
