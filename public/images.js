@@ -4,16 +4,11 @@ export const images = [
         title: 'Signage, POP',
         image: require('../public/Signage_pop/pop_00.jpg'),
         collection: [
-            { src: require('../public/Signage_pop/pop_01.jpg'), width: '1467', height: '2665' },
-            { src: require('../public/Signage_pop/pop_02.jpg'), width: '900', height: '1400' },
-            { src: require('../public/Signage_pop/pop_03.jpg'), width: '2570', height: '320' },
-            { src: require('../public/Signage_pop/pop_04.jpg'), width: '2570', height: '540' },
-            { src: require('../public/Signage_pop/pop_05.jpg'), width: '2570', height: '340' },
-            { src: require('../public/Signage_pop/pop_06.jpg'), width: '2570', height: '460' },
-            { src: require('../public/Signage_pop/pop_07.jpg'), width: '1000', height: '2455' },
-            { src: require('../public/Signage_pop/pop_08.jpg'), width: '1000', height: '2455' },
-            { src: require('../public/Signage_pop/pop_09.jpg'), width: '2655', height: '720' },
-            { src: require('../public/Signage_pop/pop_10.jpg'), width: '2592', height: '1440' }
+            { src: require('../public/Signage_pop/pop_01.jpg'), width: '2500', height: '1400' },
+            { src: require('../public/Signage_pop/pop_04.jpg'), width: '2500', height: '519' },
+            { src: require('../public/Signage_pop/pop_07.jpg'), width: '2500', height: '2400' },
+            { src: require('../public/Signage_pop/pop_09.jpg'), width: '2500', height: '705' },
+            { src: require('../public/Signage_pop/pop_10.jpg'), width: '2500', height: '1390' }
         ]
     },
     {
