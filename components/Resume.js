@@ -106,7 +106,7 @@ const Resume = () => {
                                     <div className="p-2">
                                         <p>– Branding Design</p> 
                                         <p>– Marketing Materials</p> 
-                                        <p>– Marketing Materials</p>
+                                        <p>– Developing Illustrations</p>
                                     </div>
                                     <div className="p-2">
                                         <p>– Pre-press</p> 
@@ -129,7 +129,7 @@ const Resume = () => {
                                     </div>
                                     <div className="p-2">
                                         <p>– Event Design</p> 
-                                        <p>– XXX XXX</p> 
+                                        <p>– PHP Coding</p> 
                                     </div>
                                 </div>
                             </div>
