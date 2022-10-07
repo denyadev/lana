@@ -53,8 +53,8 @@ function Work(props) {
             <div className="md:my-12 mx-6 md:mx-16 lg:mx-24 my-16">
                 { myCollection ?
                     <>
-                        <PhotoAlbum layout="rows" photos={myCollection} renderPhoto={NextJsImage} targetRowHeight={600} onClick={(event, photo, index) => setIndex(index)}/>
-                        <Lightbox
+                        <PhotoAlbum layout="rows" photos={myCollection} renderPhoto={NextJsImage} targetRowHeight={1200} onClick={(event, photo, index) => setIndex(index)}/>
+                        {/* <Lightbox
                             slides={[{
                             src: "",
                             alt: "image 1",
@@ -67,7 +67,7 @@ function Work(props) {
                             close={() => setIndex(-1)}
                             // enable optional lightbox plugins
                             plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
-                        />
+                        /> */}
                     </> 
                 :
                     <div className="flex justify-center">Loading...</div>
