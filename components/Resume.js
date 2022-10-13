@@ -169,7 +169,7 @@ const Resume = () => {
                         </div>
                         <div className="w-full">
                             <div className="css"></div>
-                            <p className="text-center text-theme text-xs">Adobe Acrobat Pro</p>
+                            <p className="text-center text-theme text-xs">Adobe Acrobat</p>
                         </div>
                         <div className="w-full">
                             <div className="acr"></div>

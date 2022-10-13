@@ -53,7 +53,7 @@ function Work(props) {
             <div className="md:my-12 mx-6 md:mx-16 lg:mx-24 my-16">
                 { myCollection ?
                     <>
-                        <PhotoAlbum layout="rows" photos={myCollection} renderPhoto={NextJsImage} targetRowHeight={1200} onClick={(event, photo, index) => setIndex(index)}/>
+                        <PhotoAlbum layout="rows" photos={myCollection} renderPhoto={NextJsImage} targetRowHeight={1100} onClick={(event, photo, index) => setIndex(index)}/>
                         {/* <Lightbox
                             slides={[{
                             src: "",
