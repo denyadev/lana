@@ -1,6 +1,6 @@
 ## Graphic Designer Portfolio
 
-![alt text](https://github.com/denyadev/pcmcpa/blob/main/p1.png?raw=true)
+![alt text](https://github.com/denyadev/lana/blob/main/p2.png?raw=true)
 
 ## Description
 
